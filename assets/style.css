@@ -1,0 +1,179 @@
+* {
+    box-sizing: border-box;
+    -webit-box-sizing: border-box;
+    -moz-sizing: border-box;
+}
+
+*:focus,
+*:active {
+    outline: none;
+}
+
+body {
+    background: #a09fa1;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.2em;
+}
+
+.ff-container {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 50px 20px;
+}
+
+.ff-window {
+    background: #fff;
+    border-radius: 15px;
+}
+
+.ff-head,
+.ff-foot,
+.ff-filter,
+.ff-title,
+.ff-list {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.ff-head {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 15px 15px 0 0;
+    background: #ff8e6c;
+}
+
+.ff-head h1 {
+    margin: 0;
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.35);
+}
+
+.ff-filter {
+    position: relative;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: #f2f1f2;
+}
+
+.ff-filter:before {
+    content: "\e902";
+    position: absolute;
+    left: 28px;
+    top: 16px;
+    color: #adacad;
+    font-family: 'ff-icons';
+    font-size: 1em;
+    line-height: 1em;
+    z-index: 1;
+}
+
+.ff-filter input {
+    display: block;
+    width: 100%;
+    height: 30px;
+    border: 0;
+    padding: 5px 10px 5px 30px;
+    border-radius: 15px;
+    background: #fff;
+    color: #b4b3b4;
+    font-family: inherit;
+    font-size: 0.8em;
+
+}
+
+.ff-row {
+    display: table;
+    width: 100%;
+}
+
+.ff-col {
+    display: table-cell;
+    width: 50%;
+    vertical-align: top;
+}
+
+.ff-col:first-child {
+    border-right: 1px solid #f2f1f2;
+}
+
+.ff-title {
+    margin: 10px 0;
+    color: #000;
+    font-size: 0.9em;
+    font-weight: 600;
+
+}
+
+.ff-list {
+    margin: 0;
+    list-style: none;
+}
+
+.ff-list-item {
+    position: relative;
+    padding: 10px 0;
+    border-bottom: 1px solid #f2f1f2;
+}
+
+.ff-user-avatar,
+.ff-user-name {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.ff-user-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    margin-right: 10px;
+}
+
+.ff-icon-plus,
+.ff-icon-remove {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    color: #c9c8c9;
+    font-size: 1.3em;
+
+    transform: translate(0, -50%);
+    -webit-transform: translate(0, -50%);
+    -moz-transform: translate(0, -50%);
+}
+
+.ff-foot {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 0 0 15px 15px;
+    background: #f2f1f2;
+    text-align: right;
+}
+
+.ff-save {
+    padding: 10px 30px;
+    border: 0;
+    border-radius: 13px;
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+    background: #ff8e6c;
+    color: #fff;
+    font-size: 1em;
+    font-family: inherit;
+    line-height: 1.1em;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+    cursor: pointer;
+}
+
+.ff-save:hover {
+    background: #fa805b;
+}
+
+.ff-save:focus,
+.ff-save:active {
+    box-shadow: inset 1px 1px 2px rgba(0,0,0,0.2);
+}
